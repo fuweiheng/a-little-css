@@ -1,0 +1,214 @@
+html{
+    font-size: 15pt;
+}
+#css-zen-garden{
+    background-color: #daede2;
+    padding:5%;
+    z-index:-1;
+}
+.intro{
+    margin:1%;
+
+    text-align:left;
+}
+a{
+    color:white;
+    text-decoration: none;
+    border-bottom: 1px  solid purple;
+}/*将所有的超链接文字变成白色的，部分需要是黑色字体的超链接在相应地方使用选择器实现*/
+abbr{
+    text-decoration: none;
+}/*用来消除abbr元素的下划线*/
+.page-wrapper{
+    z-index: 2;
+    background-color:rgb(119,196,211);
+    width:100%;
+    height:200%;
+}/*用来实现第二层背景色--蓝色*/
+h1{
+    background-color:rgb(234,46,73);
+    width:20%;
+    height:18%;
+    padding:2%;
+    color:white;
+    text-align:center;
+    font-style: normal;
+    font-size: 1.5rem;
+    position:relative;
+    top:50px;
+    left:10%;
+}/*实现小红标*/
+h2{
+    color:white;
+    margin: 10%;
+    width:50%;
+    height:50%;
+    word-wrap:break-word;
+    font-style: normal;
+    font-size: 5rem;
+}/*用来实现第二段--大标题*/
+.summary{
+    color:white;
+    margin: 10%;
+    width:50%;
+    height:50%;
+    word-wrap:break-word;
+    font-style: normal;
+    font-size: 1rem;
+}/*实现大标题下面的白色小字*/
+
+.summary>:nth-child(2):before{
+    margin:2%;
+    content:' ';
+    background-color: red;
+    z-index:2;
+    position:absolute;
+    top:101%;
+    right:39%;
+    width:45%;
+    height:0.1%;
+
+}/*在白色小字之间加入一条红线*/
+.preamble{
+    background-color:rgba(255,255,255,0.9);
+    height:20%;
+    word-wrap:break-word;
+    font-size:1rem;
+    width:50%;
+}/*实现下一段“The Road to Enlightenment”*/
+.preamble h3{
+    margin:10%;
+    padding:1%;
+    font-size: 2rem;
+}/*实现标题样式*/
+.explanation{
+    background-color:rgba(255,255,255,0);
+    margin:10%;
+    font-size: 1rem;
+    color:white;
+    width:35%;
+    padding:2%;
+}
+.explanation h3{
+    font-size: 2rem;
+}
+.participation{
+    z-index:3;
+    background-color: rgba(225,62,97,0.8);
+    width:30%;
+    height:75%;
+    padding:2%;
+    position:absolute;
+    top:200%;
+    left: 55%;
+    color:white;
+}/*实现右边第二段*/
+aside{
+    top:20%;
+    left:65%;
+    width:23%;
+    height:120%;
+    padding:3%;
+    position:absolute;
+    z-index:3;
+    background-color:rgba(227,229,139,0.8);
+    color:rgb(191,164,86);
+}/*让aside位于图上所示的大致位置*/
+aside a{
+    color:rgb(51,51,51);
+}
+aside h3{
+    font-size: 2rem;
+}
+aside ul{
+    list-style-type:none;
+    margin:1%;
+}
+aside li{
+    word-wrap: break-word;
+    position: relative;
+    right:40px;
+    margin:2%;
+}/*以上均为对aside元素的样式的实现*/
+.benefits,.requirements{
+    background-color:white;
+    margin:0;
+}
+.benefits a,.requirements a{
+    color:black;
+}
+.benefits{
+    width:30%;
+    height:auto;
+    padding:1%;
+    font-size:1rem;
+    position:absolute;
+    right:50%;
+ }
+.benefits h3{
+    font-size: 1.5rem;
+}
+.requirements{
+    margin:0;
+    padding:0.5%;
+    background-color:rgba(255,255,255,0.8);
+    width:46%;
+    z-index: 3;
+    height:auto;
+    position:relative;
+    left: 50%;
+    bottom: 100px;
+    color:black;
+    font-size:1rem;
+    word-wrap:break-word;
+}
+.requirements>:nth-last-child(1):before{
+    content:' ';
+    background-color: red;
+    z-index:2;
+    right:0.1%;
+    top:90%;
+    position:absolute;
+    width:100%;
+    height:0.1%;
+}
+.requirements  h3{
+    font-size: 1.5rem;
+    padding:0;
+}
+
+footer{
+    background-color:lightyellow;
+    padding:0.5%;
+    width:50%;
+    position: relative;
+    left:10%;
+    bottom:100px;
+    font-size:1.2rem;
+    text-align:left;
+}
+footer a{
+    color:black;
+}
+body:after{
+    content: ' ';
+
+    z-index:1;
+    background-color: rgba(100,100,100,0.8);
+    width:30%;
+    height: 430%;
+   position:absolute;
+    left:70%;
+top:0;
+}
+html:after{
+    content: ' ';
+    z-index:1;
+    background-color:rgba(255,255,255,0.9);
+    width:6.5%;
+    height: 55%;
+    position:absolute;
+    left:0;
+    top:129.7%;
+    margin:0;
+}
